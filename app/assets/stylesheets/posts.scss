@@ -1,3 +1,26 @@
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.post_main {
+  display: flex;
+  justify-content: center;
+}
+.post-container {
+  width: 75vw;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .flickr_pagination {
   text-align: center;
   padding: 0.3em;
@@ -40,4 +63,47 @@
 }
 .flickr_pagination .next_page {
   margin-left: 1em;
+}
+
+// _____________new post_________
+
+// _______________show_____________
+.show_main {
+  text-align: center;
+}
+
+// ______login form ___________
+.custom_form_main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.custom_form-container {
+  border: 1px solid lightgray;
+  padding: 2rem;
+}
+.shared_links {
+  text-align: center;
+}
+
+// _________new post form
+.new_form_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new_post_form-container {
+  width: 65vw;
+}
+
+// ___________navabar
+
+#links_collection_nav {
+  flex-direction: row;
+}
+#custom_list {
+  margin-left: 0.5rem;
 }

@@ -1,3 +1,5 @@
+<div class="new_form_main">
+<div class="new_post_form-container">
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -11,19 +13,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  
+
+  <div class="mb-3">
+    <%= form.label :title, for:"exampleInputEmail1", class:"form-label" %>
+    <%= form.text_field :title, class:"form-control", id:"exampleInputEmail1" %>
   </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+  <div class="mb-3">
+    <%= form.label :body, for:"examplebody", class:"form-label" %>
+    <%= form.text_area :body, class:"form-control", id:"examplebody" %>
   </div>
 
+ <div class="shared_links">
 
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit  class:"btn btn-primary"  %>
+    </div>
   </div>
 <% end %>
+</div>
+</div>
